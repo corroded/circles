@@ -11,3 +11,20 @@ since requiring is synchronous, it might be not fully loaded yet when I do destr
 
 I think the solution is to put beforeIndex and beforeBeforeIndex in another folder so freakshow can include them without any
 'timing' issues.
+
+### Running the example
+
+To get the error, simply run:
+
+```
+node functions/poop.js
+```
+
+and you will get this error:
+
+```
+console.log('freakshow', beforeBeforeIndex(), beforeIndex())
+                           ^
+
+TypeError: beforeBeforeIndex is not a function
+```
