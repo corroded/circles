@@ -1,6 +1,6 @@
 ### Background
 
-So I was trying to refasctor a portion of my lambda functions and I got this error.
+So I was trying to refactor a portion of my lambda functions and I got this error.
 
 My theory is since freakShow is in the same folder as the beforeIndex and beforeBeforeIndex, it sort
 of creates a circular dependency if you use object destructuring to include them.
